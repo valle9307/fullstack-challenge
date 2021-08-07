@@ -6,6 +6,7 @@ El objetivo del reto es hacer un tablero kanban con sólo 3 columnas (buffer, wo
 - Cada card debe pertenecer en base de datos a un usuario
 - Se debe poder agregar tarjetas. Las tarjetas tendrán nombre y una fecha de entrega.   
 - Al lado derecho de los textos de las columnas buffer, working y done, debe aparecer la cantidad de tarjetas de la columna.   
+- Al hacer click al card se podrá editar los valores.
 - Al mover la tarjeta a done. Debe aparecer un popup que diga "Felicitaciones por lograrlo!"   
 - El dashboard debe iniciar con los siguientes cards:
    - 1 card en buffer con el nombre "Agregar subtareas al kanban".
