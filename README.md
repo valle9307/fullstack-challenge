@@ -1,49 +1,72 @@
+<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-# Talently Fullstack Challenge
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-El objetivo del reto es hacer un tablero kanban con sólo 3 columnas (buffer, working y done). con las siguientes características:
-- Antes de ingresar al tablero debe existir un registro y autenticación del usuario.   (Los datos a considerar son name, email y password)
-- Cada card debe pertenecer en base de datos a un usuario
-- Se debe poder agregar tarjetas. Las tarjetas tendrán nombre y una fecha de entrega.   
-- Al lado derecho de los textos de las columnas buffer, working y done, debe aparecer la cantidad de tarjetas de la columna.   
-- Al hacer click al card se podrá editar los valores.
-- Al mover la tarjeta a done. Debe aparecer un popup que diga "Felicitaciones por lograrlo!"   
-- El dashboard debe iniciar con los siguientes cards:
-   - 1 card en buffer con el nombre "Agregar subtareas al kanban".
-   - 1 card en working con el nombre "Testing Kanban".
-- Si la fecha de entrega ingresada en el card es menor a la fecha de hoy, las letras del card se pintarán de rojo.   
+## About Laravel
 
-Referencia del diseño 
-![Kanban-board](https://user-images.githubusercontent.com/11076563/128603762-e0433ea7-36ce-4550-925c-eb68dea8e363.png)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Especificaciones técnicas para el proyecto:
-- El proyecto base debe ser laravel framework en su versión 6
-- El frontend será un SPA dentro de laravel con componentes Vue
-- Los estados del frontend serán manejados por vuex
-- Antes de ingresar al kanban debe existir un login, de otra forma no se puede acceder al tablero
-- El esquema de base de datos debe estar reflejado en las migraciones de laravel
-- Los cards predefinidos deben estar en seeders de laravel
-- Se acepta el uso de librerias para backend y frontend
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-# Entregable o Expectativa del reto
-- El reto tiene una duración de 72hrs (3 días) desde el momento que se recibe
-- La limpieza y legibilidad del código será considerada.
-- La validación del formulario será a criterio personal
-- Será indispensable uso de principios S.O.L.I.D.
-- La eficiencia del código en cuestiones de rendimiento sumarán para esta prueba. 
-- Al finalizar el reto, enviar el enlace del fork de la solución a emmanuel.barturen@talently.tech con copia a cristian@talently.tech con título "Reto Frontend- Talently 2021-08"
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Recomendaciones
-- Se recomienda el uso de paquetes de laravel para el registro y autenticación (Sanctum, Passport, etc)
+## Learning Laravel
 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-# Preguntas de conocimiento
-** Agregar las respuestas en el correo
-1. Qué paquete o estrategia utilizarías para levantar un sistema de administración rápidamente? (Autenticación y CRUDs)
-2. Una breve explicación de cómo laravel utiliza la injección de dependencias
-3. En qué casos utilizarías un Query Scope?
-4. Qué convenciones utilizas en la creación e implementación de migraciones?
-5. Cuál es la diferencia entre sync, await y los promesa nativas de js?
-6. Cómo utilizas las injecciones en nuxt?
-7. Qué hooks de nuxts implementaríamos en esta solución si quisieramos enviar una notificación al terminar de compilar?
-8. Nombrame 3 escenarios donde podríamos usar middlewares para esta solución? 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
+- [Hyper Host](https://hyper.host)
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
